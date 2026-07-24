@@ -35,10 +35,28 @@
     margin: 0 0 10px;
   }
   p.tagline {
-    margin: 0 0 32px;
+    margin: 0 0 28px;
     color: #6e6e73;
     font-size: 1.05rem;
   }
+  section.support {
+    margin: 0 0 32px;
+  }
+  section.support h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  section.support p {
+    margin: 0;
+    color: #6e6e73;
+    font-size: 1rem;
+  }
+  section.support a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  section.support a:hover { opacity: 0.85; }
   a.button {
     display: inline-block;
     padding: 12px 24px;
@@ -57,6 +75,8 @@
   @media (prefers-color-scheme: dark) {
     body { color: #f5f5f7; background: #000000; }
     p.tagline { color: #a1a1a6; }
+    section.support p { color: #a1a1a6; }
+    section.support a { color: #2997ff; }
     a.button { background: #f5f5f7; color: #000000; }
   }
 </style>
@@ -65,6 +85,10 @@
   <main class="card">
     <h1>MyDocs Wallet</h1>
     <p class="tagline">Your documents, organized and kept on your device.</p>
+    <section class="support">
+      <h2>Support</h2>
+      <p>Questions, problems or feature requests? Write to <a href="mailto:gianmaurice@proton.me">gianmaurice@proton.me</a>.</p>
+    </section>
     <a class="button" href="privacypolicy.html">Privacy Policy</a>
     <footer>&copy; 2026 MyDocs Wallet</footer>
   </main>
